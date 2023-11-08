@@ -13,7 +13,6 @@
 		1C539EB32AFBB3F200A17C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C539EB12AFBB3F200A17C6C /* Main.storyboard */; };
 		1C539EB52AFBB3F300A17C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C539EB42AFBB3F300A17C6C /* Assets.xcassets */; };
 		1C539EB82AFBB3F300A17C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C539EB62AFBB3F300A17C6C /* LaunchScreen.storyboard */; };
-		1C539EC12AFBB8E400A17C6C /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */; };
 		1C539EC52AFBBB1400A17C6C /* AnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539EC42AFBBB1400A17C6C /* AnalyticsEngine.swift */; };
 		1C539ECA2AFBBCA000A17C6C /* FirebaseAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539EC92AFBBCA000A17C6C /* FirebaseAnalyticsEngine.swift */; };
 		1C539ECC2AFBBCB200A17C6C /* CloudkitAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539ECB2AFBBCB200A17C6C /* CloudkitAnalyticsEngine.swift */; };
@@ -21,6 +20,7 @@
 		1C539ED82AFBC20000A17C6C /* Feature_Module.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C539ED72AFBC20000A17C6C /* Feature_Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C539EDB2AFBC20000A17C6C /* Feature_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539ED52AFBC20000A17C6C /* Feature_Module.framework */; };
 		1C539EDC2AFBC20000A17C6C /* Feature_Module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539ED52AFBC20000A17C6C /* Feature_Module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C539EE12AFBC23300A17C6C /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				1C539EC22AFBBAB600A17C6C /* Analytics */,
-				1C539EBF2AFBB84200A17C6C /* Feature Module */,
 				1C539EAB2AFBB3F200A17C6C /* AppDelegate.swift */,
 				1C539EAD2AFBB3F200A17C6C /* SceneDelegate.swift */,
 				1C539EAF2AFBB3F200A17C6C /* ViewController.swift */,
@@ -116,14 +115,6 @@
 				1C539EB92AFBB3F300A17C6C /* Info.plist */,
 			);
 			path = "Analytics-architecture";
-			sourceTree = "<group>";
-		};
-		1C539EBF2AFBB84200A17C6C /* Feature Module */ = {
-			isa = PBXGroup;
-			children = (
-				1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */,
-			);
-			path = "Feature Module";
 			sourceTree = "<group>";
 		};
 		1C539EC22AFBBAB600A17C6C /* Analytics */ = {
@@ -180,6 +171,7 @@
 		1C539ED62AFBC20000A17C6C /* Feature Module */ = {
 			isa = PBXGroup;
 			children = (
+				1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */,
 				1C539ED72AFBC20000A17C6C /* Feature_Module.h */,
 			);
 			path = "Feature Module";
@@ -301,7 +293,6 @@
 				1C539EB02AFBB3F200A17C6C /* ViewController.swift in Sources */,
 				1C539ECA2AFBBCA000A17C6C /* FirebaseAnalyticsEngine.swift in Sources */,
 				1C539EAC2AFBB3F200A17C6C /* AppDelegate.swift in Sources */,
-				1C539EC12AFBB8E400A17C6C /* AnalyticsService.swift in Sources */,
 				1C539ECF2AFBBE0400A17C6C /* RemoteAnalyticsService.swift in Sources */,
 				1C539ECC2AFBBCB200A17C6C /* CloudkitAnalyticsEngine.swift in Sources */,
 				1C539EAE2AFBB3F200A17C6C /* SceneDelegate.swift in Sources */,
@@ -313,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C539EE12AFBC23300A17C6C /* AnalyticsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +460,7 @@
 		1C539EBD2AFBB3F300A17C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +489,7 @@
 		1C539EBE2AFBB3F300A17C6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
