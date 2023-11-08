@@ -14,6 +14,7 @@
 		1C539EB52AFBB3F300A17C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C539EB42AFBB3F300A17C6C /* Assets.xcassets */; };
 		1C539EB82AFBB3F300A17C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C539EB62AFBB3F300A17C6C /* LaunchScreen.storyboard */; };
 		1C539EC12AFBB8E400A17C6C /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */; };
+		1C539EC52AFBBB1400A17C6C /* AnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539EC42AFBBB1400A17C6C /* AnalyticsEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1C539EB72AFBB3F300A17C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C539EB92AFBB3F300A17C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		1C539EC42AFBBB1400A17C6C /* AnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		1C539EAA2AFBB3F200A17C6C /* Analytics-architecture */ = {
 			isa = PBXGroup;
 			children = (
+				1C539EC22AFBBAB600A17C6C /* Analytics */,
 				1C539EBF2AFBB84200A17C6C /* Domain */,
 				1C539EAB2AFBB3F200A17C6C /* AppDelegate.swift */,
 				1C539EAD2AFBB3F200A17C6C /* SceneDelegate.swift */,
@@ -76,6 +79,22 @@
 				1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		1C539EC22AFBBAB600A17C6C /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				1C539EC32AFBBAF900A17C6C /* AnalyticsEngine */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		1C539EC32AFBBAF900A17C6C /* AnalyticsEngine */ = {
+			isa = PBXGroup;
+			children = (
+				1C539EC42AFBBB1400A17C6C /* AnalyticsEngine.swift */,
+			);
+			path = AnalyticsEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +172,7 @@
 				1C539EAC2AFBB3F200A17C6C /* AppDelegate.swift in Sources */,
 				1C539EC12AFBB8E400A17C6C /* AnalyticsService.swift in Sources */,
 				1C539EAE2AFBB3F200A17C6C /* SceneDelegate.swift in Sources */,
+				1C539EC52AFBBB1400A17C6C /* AnalyticsEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
