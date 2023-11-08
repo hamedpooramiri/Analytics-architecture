@@ -88,6 +88,7 @@
 		1C539EC22AFBBAB600A17C6C /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				1C539ECD2AFBBDC600A17C6C /* RemoteAnalyticsService */,
 				1C539EC32AFBBAF900A17C6C /* AnalyticsEngine */,
 				1C539EC62AFBBBA100A17C6C /* Infrastructure */,
 			);
@@ -125,6 +126,13 @@
 				1C539EC92AFBBCA000A17C6C /* FirebaseAnalyticsEngine.swift */,
 			);
 			path = FirebaseAnalyticsEngine;
+			sourceTree = "<group>";
+		};
+		1C539ECD2AFBBDC600A17C6C /* RemoteAnalyticsService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RemoteAnalyticsService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
