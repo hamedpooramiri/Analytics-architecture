@@ -28,6 +28,9 @@
 		1C539F042AFBC3FD00A17C6C /* Feature_Module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539ED52AFBC20000A17C6C /* Feature_Module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C539F082AFBC42500A17C6C /* Analytics_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539EE72AFBC2B000A17C6C /* Analytics_Module.framework */; };
 		1C539F092AFBC42500A17C6C /* Analytics_Module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539EE72AFBC2B000A17C6C /* Analytics_Module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C539F0E2AFBCFAC00A17C6C /* Analytics_Module.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C539F0D2AFBCFAC00A17C6C /* Analytics_Module.h */; };
+		1C539F102AFBCFB600A17C6C /* Analytics_Infrastructure_Module.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C539F0F2AFBCFB600A17C6C /* Analytics_Infrastructure_Module.h */; };
+		1C539F122AFBCFC500A17C6C /* Feature_Module.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C539F112AFBCFC500A17C6C /* Feature_Module.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +126,9 @@
 		1C539ED52AFBC20000A17C6C /* Feature_Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feature_Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C539EE72AFBC2B000A17C6C /* Analytics_Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analytics_Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C539EF72AFBC33300A17C6C /* Analytics_Infrastructure_Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analytics_Infrastructure_Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C539F0D2AFBCFAC00A17C6C /* Analytics_Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Analytics_Module.h; sourceTree = "<group>"; };
+		1C539F0F2AFBCFB600A17C6C /* Analytics_Infrastructure_Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Analytics_Infrastructure_Module.h; sourceTree = "<group>"; };
+		1C539F112AFBCFC500A17C6C /* Feature_Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feature_Module.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +240,7 @@
 		1C539ED62AFBC20000A17C6C /* Feature Module */ = {
 			isa = PBXGroup;
 			children = (
+				1C539F112AFBCFC500A17C6C /* Feature_Module.h */,
 				1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */,
 			);
 			path = "Feature Module";
@@ -242,6 +249,7 @@
 		1C539EE82AFBC2B000A17C6C /* Analytics Module */ = {
 			isa = PBXGroup;
 			children = (
+				1C539F0D2AFBCFAC00A17C6C /* Analytics_Module.h */,
 				1C539ECD2AFBBDC600A17C6C /* RemoteAnalyticsService */,
 				1C539EC32AFBBAF900A17C6C /* AnalyticsEngine */,
 			);
@@ -251,6 +259,7 @@
 		1C539EF82AFBC33300A17C6C /* Analytics Infrastructure Module */ = {
 			isa = PBXGroup;
 			children = (
+				1C539F0F2AFBCFB600A17C6C /* Analytics_Infrastructure_Module.h */,
 				1C539EC72AFBBC0900A17C6C /* CloudkitAnalyticsEngine */,
 				1C539EC82AFBBC3300A17C6C /* FirebaseAnalyticsEngine */,
 			);
@@ -271,6 +280,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C539F122AFBCFC500A17C6C /* Feature_Module.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +288,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C539F0E2AFBCFAC00A17C6C /* Analytics_Module.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +296,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C539F102AFBCFB600A17C6C /* Analytics_Infrastructure_Module.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
