@@ -18,7 +18,34 @@
 		1C539ECA2AFBBCA000A17C6C /* FirebaseAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539EC92AFBBCA000A17C6C /* FirebaseAnalyticsEngine.swift */; };
 		1C539ECC2AFBBCB200A17C6C /* CloudkitAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539ECB2AFBBCB200A17C6C /* CloudkitAnalyticsEngine.swift */; };
 		1C539ECF2AFBBE0400A17C6C /* RemoteAnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539ECE2AFBBE0400A17C6C /* RemoteAnalyticsService.swift */; };
+		1C539ED82AFBC20000A17C6C /* Feature_Module.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C539ED72AFBC20000A17C6C /* Feature_Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C539EDB2AFBC20000A17C6C /* Feature_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539ED52AFBC20000A17C6C /* Feature_Module.framework */; };
+		1C539EDC2AFBC20000A17C6C /* Feature_Module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539ED52AFBC20000A17C6C /* Feature_Module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C539ED92AFBC20000A17C6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C539EA02AFBB3F200A17C6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C539ED42AFBC20000A17C6C;
+			remoteInfo = "Feature Module";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C539EE02AFBC20000A17C6C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1C539EDC2AFBC20000A17C6C /* Feature_Module.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C539EA82AFBB3F200A17C6C /* Analytics-architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Analytics-architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +61,20 @@
 		1C539EC92AFBBCA000A17C6C /* FirebaseAnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsEngine.swift; sourceTree = "<group>"; };
 		1C539ECB2AFBBCB200A17C6C /* CloudkitAnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudkitAnalyticsEngine.swift; sourceTree = "<group>"; };
 		1C539ECE2AFBBE0400A17C6C /* RemoteAnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAnalyticsService.swift; sourceTree = "<group>"; };
+		1C539ED52AFBC20000A17C6C /* Feature_Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feature_Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C539ED72AFBC20000A17C6C /* Feature_Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feature_Module.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1C539EA52AFBB3F200A17C6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C539EDB2AFBC20000A17C6C /* Feature_Module.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C539ED22AFBC20000A17C6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				1C539EAA2AFBB3F200A17C6C /* Analytics-architecture */,
+				1C539ED62AFBC20000A17C6C /* Feature Module */,
 				1C539EA92AFBB3F200A17C6C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1C539EA82AFBB3F200A17C6C /* Analytics-architecture.app */,
+				1C539ED52AFBC20000A17C6C /* Feature_Module.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,7 +177,26 @@
 			path = RemoteAnalyticsService;
 			sourceTree = "<group>";
 		};
+		1C539ED62AFBC20000A17C6C /* Feature Module */ = {
+			isa = PBXGroup;
+			children = (
+				1C539ED72AFBC20000A17C6C /* Feature_Module.h */,
+			);
+			path = "Feature Module";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1C539ED02AFBC20000A17C6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C539ED82AFBC20000A17C6C /* Feature_Module.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1C539EA72AFBB3F200A17C6C /* Analytics-architecture */ = {
@@ -148,15 +206,35 @@
 				1C539EA42AFBB3F200A17C6C /* Sources */,
 				1C539EA52AFBB3F200A17C6C /* Frameworks */,
 				1C539EA62AFBB3F200A17C6C /* Resources */,
+				1C539EE02AFBC20000A17C6C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1C539EDA2AFBC20000A17C6C /* PBXTargetDependency */,
 			);
 			name = "Analytics-architecture";
 			productName = "Analytics-architecture";
 			productReference = 1C539EA82AFBB3F200A17C6C /* Analytics-architecture.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1C539ED42AFBC20000A17C6C /* Feature Module */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C539EDD2AFBC20000A17C6C /* Build configuration list for PBXNativeTarget "Feature Module" */;
+			buildPhases = (
+				1C539ED02AFBC20000A17C6C /* Headers */,
+				1C539ED12AFBC20000A17C6C /* Sources */,
+				1C539ED22AFBC20000A17C6C /* Frameworks */,
+				1C539ED32AFBC20000A17C6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Feature Module";
+			productName = "Feature Module";
+			productReference = 1C539ED52AFBC20000A17C6C /* Feature_Module.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -169,6 +247,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					1C539EA72AFBB3F200A17C6C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					1C539ED42AFBC20000A17C6C = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
@@ -187,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				1C539EA72AFBB3F200A17C6C /* Analytics-architecture */,
+				1C539ED42AFBC20000A17C6C /* Feature Module */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +281,13 @@
 				1C539EB82AFBB3F300A17C6C /* LaunchScreen.storyboard in Resources */,
 				1C539EB52AFBB3F300A17C6C /* Assets.xcassets in Resources */,
 				1C539EB32AFBB3F200A17C6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C539ED32AFBC20000A17C6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +309,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C539ED12AFBC20000A17C6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C539EDA2AFBC20000A17C6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C539ED42AFBC20000A17C6C /* Feature Module */;
+			targetProxy = 1C539ED92AFBC20000A17C6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1C539EB12AFBB3F200A17C6C /* Main.storyboard */ = {
@@ -417,6 +521,72 @@
 			};
 			name = Release;
 		};
+		1C539EDE2AFBC20000A17C6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2LS4DW8C9B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "hamedAmiri.Feature-Module";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1C539EDF2AFBC20000A17C6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2LS4DW8C9B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "hamedAmiri.Feature-Module";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,6 +604,15 @@
 			buildConfigurations = (
 				1C539EBD2AFBB3F300A17C6C /* Debug */,
 				1C539EBE2AFBB3F300A17C6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C539EDD2AFBC20000A17C6C /* Build configuration list for PBXNativeTarget "Feature Module" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C539EDE2AFBC20000A17C6C /* Debug */,
+				1C539EDF2AFBC20000A17C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
