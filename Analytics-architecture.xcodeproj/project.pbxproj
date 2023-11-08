@@ -182,8 +182,6 @@
 		1C539EC62AFBBBA100A17C6C /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				1C539EC82AFBBC3300A17C6C /* FirebaseAnalyticsEngine */,
-				1C539EC72AFBBC0900A17C6C /* CloudkitAnalyticsEngine */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -234,6 +232,8 @@
 		1C539EF82AFBC33300A17C6C /* Analytics Infrastructure Module */ = {
 			isa = PBXGroup;
 			children = (
+				1C539EC72AFBBC0900A17C6C /* CloudkitAnalyticsEngine */,
+				1C539EC82AFBBC3300A17C6C /* FirebaseAnalyticsEngine */,
 				1C539EF92AFBC33300A17C6C /* Analytics_Infrastructure_Module.h */,
 			);
 			path = "Analytics Infrastructure Module";
