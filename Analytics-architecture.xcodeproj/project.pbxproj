@@ -67,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				1C539EC22AFBBAB600A17C6C /* Analytics */,
-				1C539EBF2AFBB84200A17C6C /* Domain */,
+				1C539EBF2AFBB84200A17C6C /* Feature */,
 				1C539EAB2AFBB3F200A17C6C /* AppDelegate.swift */,
 				1C539EAD2AFBB3F200A17C6C /* SceneDelegate.swift */,
 				1C539EAF2AFBB3F200A17C6C /* ViewController.swift */,
@@ -79,12 +79,12 @@
 			path = "Analytics-architecture";
 			sourceTree = "<group>";
 		};
-		1C539EBF2AFBB84200A17C6C /* Domain */ = {
+		1C539EBF2AFBB84200A17C6C /* Feature */ = {
 			isa = PBXGroup;
 			children = (
 				1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */,
 			);
-			path = Domain;
+			path = Feature;
 			sourceTree = "<group>";
 		};
 		1C539EC22AFBBAB600A17C6C /* Analytics */ = {
