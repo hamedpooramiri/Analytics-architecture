@@ -85,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				1C539EC32AFBBAF900A17C6C /* AnalyticsEngine */,
+				1C539EC62AFBBBA100A17C6C /* Infrastructure */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -95,6 +96,13 @@
 				1C539EC42AFBBB1400A17C6C /* AnalyticsEngine.swift */,
 			);
 			path = AnalyticsEngine;
+			sourceTree = "<group>";
+		};
+		1C539EC62AFBBBA100A17C6C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
