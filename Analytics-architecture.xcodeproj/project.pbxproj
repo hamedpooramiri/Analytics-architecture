@@ -17,14 +17,11 @@
 		1C539ECA2AFBBCA000A17C6C /* FirebaseAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539EC92AFBBCA000A17C6C /* FirebaseAnalyticsEngine.swift */; };
 		1C539ECC2AFBBCB200A17C6C /* CloudkitAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539ECB2AFBBCB200A17C6C /* CloudkitAnalyticsEngine.swift */; };
 		1C539ECF2AFBBE0400A17C6C /* RemoteAnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539ECE2AFBBE0400A17C6C /* RemoteAnalyticsService.swift */; };
-		1C539ED82AFBC20000A17C6C /* Feature_Module.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C539ED72AFBC20000A17C6C /* Feature_Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C539EDB2AFBC20000A17C6C /* Feature_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539ED52AFBC20000A17C6C /* Feature_Module.framework */; };
 		1C539EDC2AFBC20000A17C6C /* Feature_Module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539ED52AFBC20000A17C6C /* Feature_Module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C539EE12AFBC23300A17C6C /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */; };
-		1C539EEA2AFBC2B000A17C6C /* Analytics_Module.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C539EE92AFBC2B000A17C6C /* Analytics_Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C539EED2AFBC2B000A17C6C /* Analytics_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539EE72AFBC2B000A17C6C /* Analytics_Module.framework */; };
 		1C539EEE2AFBC2B000A17C6C /* Analytics_Module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539EE72AFBC2B000A17C6C /* Analytics_Module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C539EFA2AFBC33300A17C6C /* Analytics_Infrastructure_Module.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C539EF92AFBC33300A17C6C /* Analytics_Infrastructure_Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C539EFD2AFBC33300A17C6C /* Analytics_Infrastructure_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539EF72AFBC33300A17C6C /* Analytics_Infrastructure_Module.framework */; };
 		1C539EFE2AFBC33300A17C6C /* Analytics_Infrastructure_Module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539EF72AFBC33300A17C6C /* Analytics_Infrastructure_Module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C539F032AFBC3FD00A17C6C /* Feature_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C539ED52AFBC20000A17C6C /* Feature_Module.framework */; };
@@ -124,11 +121,8 @@
 		1C539ECB2AFBBCB200A17C6C /* CloudkitAnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudkitAnalyticsEngine.swift; sourceTree = "<group>"; };
 		1C539ECE2AFBBE0400A17C6C /* RemoteAnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAnalyticsService.swift; sourceTree = "<group>"; };
 		1C539ED52AFBC20000A17C6C /* Feature_Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feature_Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C539ED72AFBC20000A17C6C /* Feature_Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feature_Module.h; sourceTree = "<group>"; };
 		1C539EE72AFBC2B000A17C6C /* Analytics_Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analytics_Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C539EE92AFBC2B000A17C6C /* Analytics_Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics_Module.h; sourceTree = "<group>"; };
 		1C539EF72AFBC33300A17C6C /* Analytics_Infrastructure_Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analytics_Infrastructure_Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C539EF92AFBC33300A17C6C /* Analytics_Infrastructure_Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics_Infrastructure_Module.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				1C539EC02AFBB8E400A17C6C /* AnalyticsService.swift */,
-				1C539ED72AFBC20000A17C6C /* Feature_Module.h */,
 			);
 			path = "Feature Module";
 			sourceTree = "<group>";
@@ -251,7 +244,6 @@
 			children = (
 				1C539ECD2AFBBDC600A17C6C /* RemoteAnalyticsService */,
 				1C539EC32AFBBAF900A17C6C /* AnalyticsEngine */,
-				1C539EE92AFBC2B000A17C6C /* Analytics_Module.h */,
 			);
 			path = "Analytics Module";
 			sourceTree = "<group>";
@@ -261,7 +253,6 @@
 			children = (
 				1C539EC72AFBBC0900A17C6C /* CloudkitAnalyticsEngine */,
 				1C539EC82AFBBC3300A17C6C /* FirebaseAnalyticsEngine */,
-				1C539EF92AFBC33300A17C6C /* Analytics_Infrastructure_Module.h */,
 			);
 			path = "Analytics Infrastructure Module";
 			sourceTree = "<group>";
@@ -280,7 +271,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C539ED82AFBC20000A17C6C /* Feature_Module.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +278,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C539EEA2AFBC2B000A17C6C /* Analytics_Module.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +285,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C539EFA2AFBC33300A17C6C /* Analytics_Infrastructure_Module.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
