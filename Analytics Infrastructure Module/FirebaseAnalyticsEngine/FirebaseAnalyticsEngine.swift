@@ -4,7 +4,7 @@
 //
 //  Created by hamedpouramiri on 11/8/23.
 //
-
+import Analytics_Module
 import Foundation
 
 /// Provide your implementation for FirebaseAnalyticsEngine

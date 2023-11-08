@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol AnalyticsEngine {
+public protocol AnalyticsEngine {
     func send(name: String, metadata: [String: String])
 }

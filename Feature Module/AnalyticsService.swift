@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol AnalyticsService {
+public protocol AnalyticsService {
     func log(event: AnalyticsEvent)
 }
 
-protocol AnalyticsEvent {
+public protocol AnalyticsEvent {
     var name: String { get set }
     var metadata: [String: String] { get set }
 }
