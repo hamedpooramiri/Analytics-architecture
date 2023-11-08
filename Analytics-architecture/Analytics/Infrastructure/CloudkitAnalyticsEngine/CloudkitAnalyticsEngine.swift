@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+/// Provide your implementation for CloudkitAnalyticsEngine
+class CloudkitAnalyticsEngine: AnalyticsEngine {
+    func send(name: String, metadata: [String : String]) {}
+}

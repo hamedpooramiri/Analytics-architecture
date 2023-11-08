@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+/// Provide your implementation for FirebaseAnalyticsEngine
+class FirebaseAnalyticsEngine: AnalyticsEngine {
+    func send(name: String, metadata: [String : String]) {}
+}
